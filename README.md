@@ -1,2 +1,1 @@
-# blazingcache.github.io
- Project's website 
+# [BlazingCache](http://blazingcache.org)
