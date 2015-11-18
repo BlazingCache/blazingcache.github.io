@@ -45,38 +45,38 @@
     <div class="marketing-row">
       <h3>What is BlazingCache?</h3>
       <p>
-          BlazingCache ...<br />
+          BlazingCache is a very fast, consistent near cache for distributed Java applications.<br />
       </p>
   </div>  
 </section>
 
-<!--
+
 <hr class="home-divider" />
 
 
 <section class="light home-section">
   <div class="marketing-row">
     <div class="marketing-col">
-      <h3>Multi-Tenancy</h3>
-      <p>
-        Majordodo manages resources for each tenant and guarantees resource access isolation and fair scheduling. Users' execution priorities are dynamic and can be modified at runtime for each and every task, even ones that have already been submitted to the scheduler.
-      </p>
-    </div>
-    <div class="marketing-col">
       <h3>Resiliency</h3>
       <p>
-        Majordodo leverages <a href='http://zookeeper.apache.org' target="_blank">Apache Zookeeper</a> and <a href='http://bookkeeper.apache.org' target="_blank">Apache Bookkeeper</a> to build a fully replicated, shared-nothing, broker architecture without any single point of failure. Workers can be run on commodity-hardware, virtual machines or dynamically provisioned cloud resources which may fail at any time without service interruption. 
+        BlazingCache leverages <a href='http://zookeeper.apache.org' target="_blank">Apache Zookeeper</a> to build a robust leader election architecture. A replicated coordinator service is used as central point of communication to ensure the consistency of cache entries between the members.
       </p>
     </div>
     <div class="marketing-col">
-      <h3>Scalability</h3>
+      <h3>Consistency</h3>
       <p>
-        Majordodo is designed to manage tasks for thousands of hosts. It is simple to add and remove hosts and resources with dynamic reconfiguration and adaptive tasks scheduling.
+        BlazingCache will protect you from reading stale data from cache and guarantee that if a member of the group invalidates an entry or a more recent version of a value is put into the cache the operation will be propagated to all the other peers in the system.
+      </p>
+    </div>
+    <div class="marketing-col">
+      <h3>Performance</h3>
+      <p>
+        BlazingCache is designed to be a really fast cache from the get-go. The main focus are performance and consistency and it doesn't carry the weight of system dedicated alsto to hande distributed computing or building computing grids.
       </p>
     </div>
   </div>
 </section>
-//-->
+
 
 </section>
 
